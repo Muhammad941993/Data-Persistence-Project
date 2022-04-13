@@ -96,4 +96,9 @@ public class MainManager : MonoBehaviour
         }
      }
     }
+
+    private void OnDestroy()
+    {
+        PlayerData.Instance.SaveToDataBase();
+    }
 }
